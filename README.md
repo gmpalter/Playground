@@ -41,13 +41,13 @@ The UX colors are
     + `Text`
     + `Highlight` -- Top and left  border colors
     + `Shade` -- Bottom and right border colors
- 
-+ Purchase Dialog colors -- These colors are defined with both Light and Dark appearance variants. iOS automatically switches some of these colors as the system appearance changes. Others are switched in code by simply reassigning the named color to the view's `layer` in a `traitCollectionDidChange:` method. The named colors are
-    + `Purchase Dialog/Header/Background`
-    + `Purchase Dialog/Buttons/Background`
-    + `Purchase Dialog/Buttons/Border` -- Assigned to the button's `layer.borderColor` property
-    + `Purchase Dialog/Gradient/Start` -- Assigned to the gradient's `layer.colors[0]` property
-    + `Purchase Dialog/Gradient/End` -- Assigned to the gradient's `layer.colors[1]` property
+
+- Purchase Dialog colors -- These colors are defined with both Light and Dark appearance variants. iOS automatically switches some of these colors as the system appearance changes. Others are switched in code by simply reassigning the named color to the view's `layer` in a `traitCollectionDidChange:` method. The named colors are
+    - `Purchase Dialog/Header/Background`
+    - `Purchase Dialog/Buttons/Background`
+    - `Purchase Dialog/Buttons/Border` -- Assigned to the button's `layer.borderColor` property
+    - `Purchase Dialog/Gradient/Start` -- Assigned to the gradient's `layer.colors[0]` property
+    - `Purchase Dialog/Gradient/End` -- Assigned to the gradient's `layer.colors[1]` property
 
 #### Home Screen UX
 
@@ -59,14 +59,14 @@ The constraint parameters are
     + The width of the title as a fraction of the screen width when in portrait orientation
 + `HomeScreenViewController.titleImageWidthLandscape`
     + The width of the title as a fraction of the screen width when in landscape orientation
- 
-+ `HomeScreenViewController.starburstCenterYPortrait`
-    + The Y position of the starburst image as a fraction of the screen's center Y when  in portrait orientation
-    + Smaller values place the image higher on the screen
-+ `HomeScreenViewController.starnurstCenterYLandscape`
-    + The Y position of the starburst image as a fraction of the screen's center Y when  in landscape orientation
-    + Smaller values place the image higher on the screen
- 
+
+- `HomeScreenViewController.starburstCenterYPortrait`
+    - The Y position of the starburst image as a fraction of the screen's center Y when  in portrait orientation
+    - Smaller values place the image higher on the screen
+- `HomeScreenViewController.starnurstCenterYLandscape`
+    - The Y position of the starburst image as a fraction of the screen's center Y when  in landscape orientation
+    - Smaller values place the image higher on the screen
+
 + `HomeScreenViewController.playImageWidthPortrait`
     + The width of the Play button image as a fraction of the screen width when in portrait orientation
 + `HomeScreenViewController.playImageHeightLandscape`
@@ -75,21 +75,21 @@ The constraint parameters are
     + The Y position of the Play button  image as a fraction of the screen's center Y when  in portrait orientation
     + Smaller values place the image higher on the screen
     + When in landscape orientation, the Play button is centered on the screen
- 
-+ `HomeScreenViewController.buttonsBottomMargin`
-    + The spacing between the More Games, Share, and Options buttons and the bottom of the screen when the Learning Touch logo is not visible
-+ `HomeScreenViewController.buttonsLogoSpacing`
-    + The spacing between the More Games, Share, and Options buttons and the Learning Touch logo
+
+- `HomeScreenViewController.buttonsBottomMargin`
+    - The spacing between the More Games, Share, and Options buttons and the bottom of the screen when the Learning Touch logo is not visible
+- `HomeScreenViewController.buttonsLogoSpacing`
+    - The spacing between the More Games, Share, and Options buttons and the Learning Touch logo
 
 Additionally, there are two UX parameters in `WordListTile.swift` which affect the appearance of locked word list tiles on the home screen.  They are
 
 + `WordListTile.lockedOverlayLocked`
     + The locked overlay opacity of word list tiles in the first expansion pack.
     + The current value, `0.2`, gives these locked tiles a slightly darker appearance than unlocked tiles
- 
-+ `WordListTile.lockedOverlayLockedIncrement`
-    + An increment added to the locked overlay opacity based on the expansion pack's position in the `Configuration.shared.expansionPacks` array.
-    + A positive value causes locked word list tiles to appear darker as the expansion pack number increases
+
+- `WordListTile.lockedOverlayLockedIncrement`
+    - An increment added to the locked overlay opacity based on the expansion pack's position in the `Configuration.shared.expansionPacks` array.
+    - A positive value causes locked word list tiles to appear darker as the expansion pack number increases
 
 ---
 
@@ -99,7 +99,7 @@ Additionally, there are two UX parameters in `WordListTile.swift` which affect t
 + Switch permanent expansion pack purchased status from local storage (`UserDefaults`) to the iCloud key-value store (`NSUbiquitousKeyValueStore`)?
     + Now that FW Deluxe  with IAP is live in the store, this change will require a migration strategy
 
-+ Add Chinese to all multi-language apps?
+- Add Chinese to all multi-language apps?
 
 ---
 
